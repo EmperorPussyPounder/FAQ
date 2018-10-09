@@ -484,7 +484,48 @@ The result would be:
 
 ### Inheritance
 
-### Abstraction
+### Abstraction, abstract classes and methods and polymorphism
+	//Polymorphisms are subclasses that deviate slightly from their superclass
+	//food bucky[] = new food[2]
+	//bucky[0] = new potpie();
+	//bucky[1] = new tuna();
+	//These subclasses are both food, and share a lot of traits
+	//but not all, rather than creating an entirely new class for each one
+	//we can just override particular methods in food
+	//and keep the rest the same.
+/*
+ If you can enter a superclass as arguments,
+ then you can enter subclasses as arguments
+ */
+	
+/*
+ If you "override " a method from a superclass, 
+ every method has to have the same input and output datatypes.
+ Otherwise it's called overloading.
+ */
+	
+/*
+ An abstract class, is a class that would be too general
+ for instantiation for which instantiation of subclasses might be useful,
+ but not necessarily instantiation of the class itself. 
+ 
+ For example:
+ Superclass food, food can be a lot of things, instantiating some object out of
+ the class food would be pretty useless, however a subclass like tuna has got
+ a lot more defined features (like colour, shape, taste, etc.)
+ 
+ An abstract class allows us to inherit features from that class,
+ but no objects can instantiated in that class.
+ */
+	
+/*
+abstract methods are also a thing :o These are methods that MUST be overridden.
+these boys don't need a body. Abstract methods need to be in abstract classes.
+Abstract classes can still have concrete methods though.
+If ya boy wants to inherit shiz from its superclass, it must override the abstract method.
+ */
+	
+
 
 ### Interface
 
